@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+.center {
+    padding-right: calc(50% - 600px);
+    padding-left: calc(50% - 600px);
+}
+.header {
+    height: 1024px;
+    background-image: url(img/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__title {
+        width: 788px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 78px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        padding-top: 217px;
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        width: 480px;
+        padding-top: 32px;
+    }
+    &__button {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;        
+        color: #FFFFFF;        
+        width: 234.06px;
+        height: 48.6px;        
+        background: #9C0332;
+        border-radius: 30px;
+        margin-top: 44px;
+    }    
+}
+
+.play {
+    height: 556px;
+    background: #000915;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 32px;
+    &__item {
+        background: no-repeat;
+        border-radius: 16px;
+        width: 379px;
+        height: 300px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: #FFFFFF;
+        display: flex;
+        align-items: flex-end;
+        padding-left: 32px;
+        padding-bottom: 32px;
+
+    }
+    &__item-1 {
+        background-image: url(img/Play1.jpg);
+        color: #FFFFFF;
+    }
+    &__item-2 {
+        background-image: url(img/Play2.jpg);
+        color: #FFFFFF;
+    }
+    &__item-3 {
+        background-image: url(img/Play3.jpg);
+        color: #FFFFFF;
+    }
+}
