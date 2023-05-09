@@ -25,13 +25,10 @@ a {
   background-size: cover;
 }
 .header__title {
-  width: 788px;
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
   line-height: 78px;
-  display: flex;
-  align-items: center;
   color: #FFFFFF;
   padding-top: 217px;
 }
@@ -40,13 +37,12 @@ a {
   font-weight: 300;
   font-size: 18px;
   line-height: 32px;
-  display: flex;
-  align-items: center;
   color: #FFFFFF;
   width: 480px;
   padding-top: 32px;
 }
 .header__button {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -57,6 +53,7 @@ a {
   background: #9C0332;
   border-radius: 30px;
   margin-top: 44px;
+  border: none;
 }
 
 .play {
