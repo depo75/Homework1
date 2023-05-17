@@ -11,16 +11,19 @@ body {
 a {
     text-decoration: none;
 }
+
 .center {
     padding-right: calc(50% - 600px);
     padding-left: calc(50% - 600px);
 }
+
 .header {
     height: 1024px;
     background-image: url(img/header.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
     &__title {
         font-style: normal;
         font-weight: 700;
@@ -29,6 +32,7 @@ a {
         color: #FFFFFF;
         padding-top: 217px;
     }
+
     &__text {
         font-style: normal;
         font-weight: 300;
@@ -37,22 +41,23 @@ a {
         color: #FFFFFF;
         width: 480px;
         padding-top: 32px;
-       
+
     }
+
     &__button {
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
-        line-height: 22px;        
-        color: #FFFFFF;        
+        line-height: 22px;
+        color: #FFFFFF;
         width: 234.06px;
-        height: 48.6px;        
+        height: 48.6px;
         background: #9C0332;
         border-radius: 30px;
         margin-top: 44px;
         border: none;
-    }    
+    }
 }
 
 .play {
@@ -62,6 +67,7 @@ a {
     flex-wrap: nowrap;
     justify-content: space-around;
     gap: 32px;
+
     &__item {
         background: no-repeat;
         border-radius: 16px;
@@ -78,52 +84,64 @@ a {
         padding-bottom: 32px;
 
     }
+
     &__item-1 {
         background-image: url(img/Play1.jpg);
         color: #FFFFFF;
     }
+
     &__item-2 {
         background-image: url(img/Play2.jpg);
         color: #FFFFFF;
     }
+
     &__item-3 {
         background-image: url(img/Play3.jpg);
         color: #FFFFFF;
     }
 }
+
 /*Мобильная версия*/
-    
+
 @media (max-width: 767px) {
     .center {
         padding-left: 16px;
         padding-right: 16px;
-    }  
+    }
+
     .header {
         height: 735px;
+
         &__title {
             font-size: 32px;
             line-height: 39px;
             text-align: center;
             padding-top: 239px;
         }
+
         &__text {
             font-size: 14px;
             line-height: 22px;
             text-align: center;
-            width: auto;         
+            width: auto;
         }
+
         &__button {
             position: relative;
             left: 50%;
             transform: translate(-50%, 0);
         }
     }
+
     .play {
         flex-direction: column;
+        align-items: center;
+
         &__item {
-            width: 343px; 
-           
+            width: 343px;
+            
+
         }
     }
 
-}           
+}
