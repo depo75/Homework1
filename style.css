@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -90,4 +91,38 @@ a {
 .play__item-3 {
   background-image: url(img/Play3.jpg);
   color: #FFFFFF;
+}
+
+/*Мобильная версия*/
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    height: 735px;
+  }
+  .header__title {
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    padding-top: 239px;
+  }
+  .header__text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    width: auto;
+  }
+  .header__button {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .play {
+    flex-direction: column;
+  }
+  .play__item {
+    width: 343px;
+  }
 }/*# sourceMappingURL=style.css.map */
