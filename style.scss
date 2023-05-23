@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background: #000915;
 }
 
 a {
@@ -100,13 +101,58 @@ a {
         color: #FFFFFF;
     }
 }
+.season {
+        height: 800px;
+        background: #000915;
+        display: flex;
+        gap: 135px;
+        padding-top: 233px;
+    &__title {
+        margin-top: 43px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;     
+        color: #FFFFFF;           
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        color: #FFFFFF;
+        width: 584px;
+        margin-top: 32px;
+    }
+    &__button {
+        border: none;
+        width: 234.06px;
+        height: 48.6px;
+        left: 0px;
+        top: 187px;
+        background: #9C0332;
+        border-radius: 30px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        margin-top: 32px;
+
+    }
+    &__img {
+        width: 485px;
+        height: 333px;
+    }
+}
 
 /*Мобильная версия*/
 
 @media (max-width: 767px) {
     .center {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-right: calc(50% - 171px);
+        padding-left: calc(50% - 171px);
     }
 
     .header {
@@ -136,11 +182,44 @@ a {
     .play {
         flex-direction: column;
         align-items: center;
+        height: 1221px;
+        padding-bottom: 127px;
 
         &__item {
             width: 343px;
-            
+        }
+    }
 
+    .season {
+        flex-direction: column;
+        gap: 64px;
+        height: 654px;
+        padding-top: 51px;
+        &__box {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        &__title {
+            font-size: 48px;
+            line-height: 59px;
+            text-align: center;
+            margin-top: 0px;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+            width: auto;
+            text-align: center;
+        }
+        &__button {
+            
+        }
+        &__img {
+            width: 344px;
+            height: 236px;
+            
         }
     }
 
