@@ -93,17 +93,3 @@ let time = new Date().toLocaleString('ru', {
 console.log("Дата "+date+"- это "+week+ ". Время: "+time);
 
 
-
-function getRandomArray(num) {
-  const randomArr = [];
-  const arrLength = num / 2;
-
-  for (let i = 0; i < arrLength; i++) {
-    const randomNum = Math.floor(Math.random() * num);
-    randomArr.push(randomNum);//Почему это внутри for? 
-  }
-
-  return randomArr;
-}
-
-console.log(getRandomArray(15));
